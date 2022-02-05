@@ -29,7 +29,9 @@ const UserDetails = () => {
                 <h1>{data?.data.first_name} {data?.data.last_name}</h1>
                 <img src={data?.data.avatar} alt={data?.data.first_name}/>
                 <p>{data?.data.email}</p>
-                <Button text="Edit Profile" />
+                <Link to="/userId/edit">
+                    <Button text="Edit Profile" />
+                </Link>
                 <Link to="">
                     <Button text="Back Home" />
                 </Link>

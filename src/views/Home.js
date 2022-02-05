@@ -60,7 +60,7 @@ const Home = () => {
             <h1>Users</h1>
                 <Form form={form} handleChange={handleChange} handleSubmit={handleSubmit} />
                 { message && <p className='user-msg'>{message}</p>}
-            { isLoading && <p>Cargando...</p>}
+                { isLoading && <p>Cargando...</p>}
             <div className="card-container">
             {
                 data?.map((user, key)=>{

@@ -12,6 +12,9 @@ const Card = ({ id, firstName, lastName, email, avatar, handleDelete }) => {
             <Link to={`/${id}`}>
                 <button>View Profile</button>
             </Link>
+            <Link to={`/${id}/edit`}>
+                <Button text="Edit User" />
+            </Link>
             <Button text="Delete User" handleDelete={handleDelete} id={id} />
         </div>
     )
