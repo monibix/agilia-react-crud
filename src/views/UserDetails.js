@@ -21,7 +21,6 @@ const UserDetails = () => {
           })
           .catch(e => console.log('Error', e))
     },[])
-    console.log('data user', data);
 
     return (
         <>  
